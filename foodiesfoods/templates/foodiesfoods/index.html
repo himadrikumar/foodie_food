@@ -1,0 +1,23 @@
+{% extends "foodiesfoods/base.html" %}
+
+
+{% block page_header %}
+    <div class="jumbotron">
+        <h1 class="display-3">Eat Away!</h1>
+
+        <p class="lead">This is Foodie's Foods for you. If you're looking to step up your food game,
+            you've come to the right place! Foodie's Foods is the option for any one who takes food seriously.
+            Not even a single rupee is wasted if you dine here! So what are you waiting for?!
+            You can find the location to our place below.</p>
+
+        <a class="btn btn-lg btn-primary" href="{% url 'foodiesfoods:foods' %}"
+           role="button">Dishes &raquo;</a>
+    </div>
+
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.
+    5559626202275!2d72.52929331496807!3d23.040070484944177!2m3!1f0!2f0!3f0!3m2!
+    1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84b745e75c2b%3A0x1fe2c45c3c04601d!2sAlp
+    ha%20One%20Mall%2C%20261%2C%20Sarkari%20Vasahat%20Road%2C%20Vastrapur%2C%20
+    Ahmedabad%2C%20Gujarat%20380006!5e0!3m2!1sen!2sin!4v1610525516755!5m2!1sen!
+    2sin" width="1110" height="295" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+{% endblock page_header %}

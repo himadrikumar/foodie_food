@@ -1,0 +1,14 @@
+{% extends "foodiesfoods/base.html" %}
+
+{% block content %}
+
+    <p><a href="{% url 'foodiesfoods:food' food.id %}">{{ food }}</a></p>
+
+    <p>Add a new rating:</p>
+    <form action="{% url 'foodiesfoods:rating' food.id %}" method='post'>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button name="submit">Add rating</button>
+    </form>
+
+{% endblock content %}
